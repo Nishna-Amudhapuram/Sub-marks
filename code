@@ -1,0 +1,18 @@
+submarks = {"Maths": int(input("Enter the Maths subject marks: ")), "Science": int(input("Enter the Science subject marks: ")), "Computer": int(input("Enter the computer subject marks: "))}
+if submarks["Maths"] in range(0, 10):
+    print(((submarks["Maths"]+submarks["Science"]+submarks["Computer"])/3))
+    if submarks["Science"] in range(0, 10):
+        print(((submarks["Maths"]+submarks["Science"]+submarks["Computer"])/3))
+        if submarks["Computer"] in range(0, 10):
+            print(((submarks["Maths"]+submarks["Science"]+submarks["Computer"])/3))
+else:
+    print("invalid marks")
+    submarks["Maths"] = int(input("Enter the Maths subject marks: "))
+    submarks["Science"] = int(input("Enter the Science subject marks: "))
+    submarks["Computer"] = int(input("Enter the Computer subject marks: "))
+    if submarks["Maths"] in range(0, 10):
+        print(((submarks["Maths"] + submarks["Science"] + submarks["Computer"]) / 3))
+        if submarks["Science"] in range(0, 10):
+            print(((submarks["Maths"] + submarks["Science"] + submarks["Computer"]) / 3))
+            if submarks["Computer"] in range(0, 10):
+                print(((submarks["Maths"] + submarks["Science"] + submarks["Computer"]) / 3))
